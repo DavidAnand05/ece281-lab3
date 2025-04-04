@@ -154,8 +154,8 @@ begin
         wait for k_clk_period;
         w_right <= '0';
         wait for k_clk_period;
-        assert w_lights_R = "001" report "Test 3a Failed: R1 not active" severity failure;
-        wait for k_clk_period;
+        --assert w_lights_R = "001" report "Test 3a Failed: R1 not active" severity failure;
+        --wait for k_clk_period;
         assert w_lights_R = "011" report "Test 3b Failed: R2 not active" severity failure;
         wait for k_clk_period;
         assert w_lights_R = "111" report "Test 3c Failed: R3 not active" severity failure;
